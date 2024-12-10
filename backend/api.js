@@ -32,7 +32,7 @@ mongoose.connection.on("connected", ()=>{
 })
 
 app.get("/", (req, res)=>{
-    res.send("hello first request!")
+    res.send("welcome back hotel!")
 });
 
 
