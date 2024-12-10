@@ -34,8 +34,25 @@ async function main() {
     }
 }
 
-app.get('/',(req,res)=>{
+app.get('5001/',(req,res)=>{
     res.send(` Hello Express is server Working on ${process.env.PORT}`);
 })
+app.use(cors({
+    origin:'http:localhost:3001',
+    credentials:true
+}))
+
+// add middleware to parse cookies
+//app.use(cookieParser());
+
+
+// add middleware to log requests
+// app.use(morgan('dev'));
+
+app.use('/', express.static('dist'))
+app.get("/",(req,res)=>{
+    res.json("welcome hotel")
+    })
+
 
 main();
