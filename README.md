@@ -19,3 +19,4 @@ Dec 9
 More options
 backend source code wrong submitted previously now i correctly submitted
  I have re subimit the project see the frontend file name backend .jsx url i will written
+i have bee searching in google chrome you should be install the cors extension chrome web store. the way is blocked thats why not working api.
