@@ -11,6 +11,10 @@ require('dotenv').config();
 
 
 const app = express();
+app.use(cors({
+    origin:'http:localhost:3001',
+    credentials:true
+}))
 
 const connect = async () => {
 
